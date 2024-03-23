@@ -38,6 +38,8 @@ const EditCanvas: FC<PropsType> = ({ loading }) => {
 
   // 点击组件，选中
   function handleClick(event: MouseEvent, id: string) {
+    console.log("gjl-args", id);
+
     event.stopPropagation() // 阻止冒泡
     dispatch(changeSelectedId(id))
   }

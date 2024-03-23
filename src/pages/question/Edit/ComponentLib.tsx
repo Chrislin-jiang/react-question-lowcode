@@ -26,7 +26,8 @@ function genComponent(c: ComponentConfType) {
   return (
     <div key={type} className={styles.wrapper} onClick={handleClick}>
       <div className={styles.component}>
-        <Component />
+        {/* <Component /> */}
+        <div>{title}</div>
       </div>
     </div>
   )

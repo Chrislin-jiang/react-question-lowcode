@@ -15,7 +15,7 @@ import {
 
 type PropsType = {
   children: JSX.Element | JSX.Element[]
-  items: Array<{ id: string; [key: string]: any }>
+  items: Array<{ id: string;[key: string]: any }>
   onDragEnd: (oldIndex: number, newIndex: number) => void
 }
 

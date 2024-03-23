@@ -16,7 +16,7 @@ import Star from '../pages/manage/Star'
 
 // 路由懒加载，拆分 bundle ，优化首页体积
 const Edit = lazy(() => import(/* webpackChunkName: "editPage" */ '../pages/question/Edit'))
-const Stat = lazy(() => import(/* webpackChunkName: "statPage" */ '../pages/question/Stat'))
+// const Stat = lazy(() => import(/* webpackChunkName: "statPage" */ '../pages/question/Stat'))
 
 const router = createBrowserRouter([
   {
@@ -67,10 +67,10 @@ const router = createBrowserRouter([
         path: 'edit/:id',
         element: <Edit />,
       },
-      {
-        path: 'stat/:id', // statistic 统计
-        element: <Stat />,
-      },
+      // {
+      //   path: 'stat/:id', // statistic 统计
+      //   element: <Stat />,
+      // },
     ],
   },
 ])
